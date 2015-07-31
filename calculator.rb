@@ -9,19 +9,16 @@ begin
   operator = gets.chomp
 
   
-    if operator == "1" 
-      puts num1.to_i + num2.to_i
-      elsif operator == "2"
-        puts num1.to_i - num2.to_i
-      elsif operator == "3"
-        puts num1.to_i * num2.to_i
-      else operator == "4"
-        puts num1.to_f / num2.to_f
-    end
+  if operator == "1" 
+    puts num1.to_i + num2.to_i
+  elsif operator == "2"
+    puts num1.to_i - num2.to_i
+  elsif operator == "3"
+    puts num1.to_i * num2.to_i
+  else operator == "4"
+    puts num1.to_f / num2.to_f
+  end
   
-puts "Do you want to do again?"
-answer = gets.chomp
-
- 
-
-end while answer == 'Y'
+  puts "Do you want to do it again?"
+  answer = gets.chomp.downcase
+end while answer == 'y'
